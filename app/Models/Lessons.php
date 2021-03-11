@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Lessons extends Model
+{
+    protected $table = 'lessons';
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d H:m:i',
+        'updated_at' => 'datetime:Y-m-d H:m:i'
+    ];
+    protected $fillable = [
+        'name', 'video', 'chapter_id'
+    ];
+}
